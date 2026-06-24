@@ -5,9 +5,7 @@ import ParticleField from './PraticleField';
 
 const titles = [
   'Full-Stack Developer',
-  'Software Developer',
-  'Cloud Enthusiast',
-  'UI/UX Implementer',
+  'Software Development'
 ];
 
 export default function HeroSection({ avatarImg }) {
@@ -44,12 +42,12 @@ export default function HeroSection({ avatarImg }) {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pt-24 lg:pt-0">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div>
+          <div className="text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex items-center gap-2 mb-6"
+              className="flex items-center justify-center lg:justify-start gap-2 mb-6"
             >
               <div className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse" />
               <span className="text-sm text-muted-foreground">Available for opportunities</span>
@@ -82,7 +80,7 @@ export default function HeroSection({ avatarImg }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-lg mb-4"
+             className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0 mb-4"
             >
               Software developer with hands-on experience building full-stack applications,
               cybersecurity tools, and cloud-based solutions. Singapore Polytechnic graduate
@@ -93,7 +91,7 @@ export default function HeroSection({ avatarImg }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
-              className="flex items-center gap-3 text-sm text-muted-foreground mb-8"
+              className="flex items-center justify-center lg:justify-start gap-3 text-sm text-muted-foreground mb-8"
             >
               <MapPin className="w-4 h-4" />
               <span>Singapore</span>
@@ -105,7 +103,7 @@ export default function HeroSection({ avatarImg }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="flex flex-wrap gap-3"
+              className="flex flex-wrap justify-center lg:justify-start gap-3"
             >
               <a
                 href="#projects"
@@ -139,7 +137,7 @@ export default function HeroSection({ avatarImg }) {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="hidden lg:flex justify-center"
+            className="flex justify-center order-first lg:order-last"
           >
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#6366F1]/20 to-[#06B6D4]/20 rounded-full blur-2xl animate-pulse" />
@@ -178,12 +176,6 @@ export default function HeroSection({ avatarImg }) {
           transition={{ delay: 1.5 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <ArrowDown className="w-5 h-5 text-muted-foreground" />
-          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -37,7 +37,7 @@ export default function Navbar({ isDark, onToggleTheme }) {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#6366F1] to-[#06B6D4] flex items-center justify-center">
                 <span className="text-white font-bold text-sm">S</span>
               </div>
-              <span className="font-heading font-semibold text-foreground tracking-tight hidden sm:block">
+              <span className="font-heading font-semibold text-foreground tracking-tight">
                 SHUNN_SLEP
               </span>
             </a>
